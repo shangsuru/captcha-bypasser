@@ -5,6 +5,7 @@ const captcha = require("nodejs-captcha");
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
+app.use(express.static(__dirname + "/static"));
 
 app.get("/", (req, res) => {
     let result = captcha();

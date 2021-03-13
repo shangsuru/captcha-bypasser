@@ -7,6 +7,7 @@
             integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <%- include('nav'); -%>
@@ -14,11 +15,13 @@
             <img class="mt-5 mb-3" src="<%= source %>"" />
             <form>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Code" />
+                    <input id="code" class="form-control" id="exampleInputPassword1" placeholder="Code" />
                 </div>
-                <button class="btn btn-primary">Submit</button>
+                <button id="submit" type="button" class="btn btn-primary" onclick="checkCode('<%= value %>')">Submit</button>
                 <button class="btn btn-danger">Reload</button>
             </form>
+            <p id="submit-message"></p>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
