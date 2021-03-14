@@ -1,2 +1,4 @@
 node_modules
 dataset/images/
+dataset/char_images
+dataset/.ipynb_checkpoints
