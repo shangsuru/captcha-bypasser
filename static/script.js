@@ -1,4 +1,5 @@
 function checkCode(expected) {
+    // Compare with code entered and display a message depending on if it is right or wrong
     let submitMsg = document.getElementById("submit-message");
     let input = document.getElementById("code").value;
     if (input == expected) {

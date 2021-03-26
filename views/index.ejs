@@ -17,6 +17,9 @@
                 <div class="form-group">
                     <input id="code" class="form-control" id="exampleInputPassword1" placeholder="Code" />
                 </div>
+
+                <div>Attempts: <%= attempts %></div>
+
                 <button id="submit" type="button" class="btn btn-primary" onclick="checkCode('<%= value %>')">Submit</button>
                 <button class="btn btn-danger">Reload</button>
             </form>
