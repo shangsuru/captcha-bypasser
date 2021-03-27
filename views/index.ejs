@@ -12,7 +12,7 @@
     <body>
         <%- include('nav'); -%>
         <div class="container">
-            <img class="mt-5 mb-3" src="<%= source %>"" />
+            <img id="captcha" class="mt-5 mb-3" src="<%= source %>"" />
             <form>
                 <div class="form-group">
                     <input id="code" class="form-control" id="exampleInputPassword1" placeholder="Code" />
@@ -21,7 +21,7 @@
                 <div>Attempts: <%= attempts %></div>
 
                 <button id="submit" type="button" class="btn btn-primary" onclick="checkCode('<%= value %>')">Submit</button>
-                <button class="btn btn-danger">Reload</button>
+                <button id="reload" class="btn btn-danger">Reload</button>
             </form>
             <p id="submit-message"></p>
         </div>

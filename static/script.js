@@ -9,4 +9,6 @@ function checkCode(expected) {
         submitMsg.innerHTML = "Failed at bypassing the CAPTCHA :(";
         submitMsg.classList.add("failure");
     }
+
+    input.value = "";
 }
