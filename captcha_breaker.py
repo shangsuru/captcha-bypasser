@@ -153,8 +153,8 @@ def normalize_dimensions(image, desired_width=20, desired_height=20):
     return image_with_border_resized
 
 
-
-driver = webdriver.Chrome(executable_path="/Users/henryhelm/Desktop/captcha-bypasser/chromedriver")
+chromedriver_path = os.getcwd() + "/chromedriver"
+driver = webdriver.Chrome(executable_path=chromedriver_path)
 driver.get("http://localhost:8000")
 
 while True:
